@@ -42,9 +42,8 @@ headers = {
 }
 
 
-id = 'amazon-B09PWX3S3R'
-url_id = id.split('-')[1].strip()
-url = f"https://www.amazon.ae/dp/{url_id}?th=1&psc=1"
+id = 'B09PWX3S3R'
+url = f"https://www.amazon.ae/dp/{id}?th=1&psc=1"
 session = requests.Session()
 
 with session.get(url,headers=headers) as response:
